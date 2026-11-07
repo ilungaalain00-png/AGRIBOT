@@ -1,0 +1,24 @@
+# ROS 2 / colcon
+build/
+install/
+log/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+
+# Environnements virtuels
+.venv/
+venv/
+
+# Éditeurs
+.vscode/
+.idea/
+
+# Fichiers temporaires
+*.backup*
+*.tmp
+*~
+.DS_Store

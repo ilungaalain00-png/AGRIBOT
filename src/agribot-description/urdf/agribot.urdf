@@ -1,0 +1,1109 @@
+<?xml version="1.0"?>
+<robot name="agribot">
+  <link name="base_link">
+    <!-- sw2robot density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://agribot-description/meshes/Base_TT_WAKANDA_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://agribot-description/meshes/Base_TT_WAKANDA_1.stl" />
+      </geometry>
+    </collision>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://agribot-description/meshes/support_moteur_wakanda_2.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://agribot-description/meshes/support_moteur_wakanda_2.stl" />
+      </geometry>
+    </collision>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://agribot-description/meshes/support_moteur_wakanda_2_2.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://agribot-description/meshes/support_moteur_wakanda_2_2.stl" />
+      </geometry>
+    </collision>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://agribot-description/meshes/support_moteur_wakanda_2_3.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://agribot-description/meshes/support_moteur_wakanda_2_3.stl" />
+      </geometry>
+    </collision>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://agribot-description/meshes/devant_TT_WAKANDA_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://agribot-description/meshes/devant_TT_WAKANDA_1.stl" />
+      </geometry>
+    </collision>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://agribot-description/meshes/devant_TT_WAKANDA_1_2.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://agribot-description/meshes/devant_TT_WAKANDA_1_2.stl" />
+      </geometry>
+    </collision>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://agribot-description/meshes/support_moteur_wakanda_2_4.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://agribot-description/meshes/support_moteur_wakanda_2_4.stl" />
+      </geometry>
+    </collision>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://agribot-description/meshes/cote_TT_WAKANDA_int_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://agribot-description/meshes/cote_TT_WAKANDA_int_1.stl" />
+      </geometry>
+    </collision>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://agribot-description/meshes/cote_int_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://agribot-description/meshes/cote_int_1.stl" />
+      </geometry>
+    </collision>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://agribot-description/meshes/haut_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://agribot-description/meshes/haut_1.stl" />
+      </geometry>
+    </collision>
+    <inertial><origin xyz="1.036797285e-05 4.407374746e-05 0.02452430388" rpy="0 0 0" /><mass value="0.4609386" /><inertia ixx="0.00292185789" ixy="-1.475836691e-06" ixz="-4.662932783e-09" iyy="0.002045588274" iyz="6.74613677e-08" izz="0.004608845656" /></inertial></link>
+  <link name="motor_hub_2">
+    <!-- sw2robot density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://agribot-description/meshes/motor_hub_2.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://agribot-description/meshes/motor_hub_2.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="0.01833890122 -1.468346327e-07 2.237498867e-07" rpy="0 0 0" />
+      <mass value="0.00243328" />
+      <inertia ixx="5.24477e-08" ixy="-2.24933e-12" ixz="2.96266e-12" iyy="3.4436e-07" iyz="-1.16007e-10" izz="3.44997e-07" />
+    </inertial>
+  </link>
+  <link name="motor_hub_3">
+    <!-- sw2robot density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://agribot-description/meshes/motor_hub_2.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://agribot-description/meshes/motor_hub_2.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="0.01833890122 -1.468346327e-07 2.237498867e-07" rpy="0 0 0" />
+      <mass value="0.00243328" />
+      <inertia ixx="5.24477e-08" ixy="-2.24933e-12" ixz="2.96266e-12" iyy="3.4436e-07" iyz="-1.16007e-10" izz="3.44997e-07" />
+    </inertial>
+  </link>
+  <link name="motor_hub_4">
+    <!-- sw2robot density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://agribot-description/meshes/motor_hub_2_2.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://agribot-description/meshes/motor_hub_2_2.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="-0.01833890122 -2.628638524e-07 5.026943684e-08" rpy="0 0 0" />
+      <mass value="0.00243328" />
+      <inertia ixx="5.24477e-08" ixy="3.59706e-12" ixz="-9.47596e-13" iyy="3.44986e-07" iyz="1.42555e-10" izz="3.44371e-07" />
+    </inertial>
+  </link>
+  <link name="motor_hub_5">
+    <!-- sw2robot density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://agribot-description/meshes/motor_hub_2_2.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://agribot-description/meshes/motor_hub_2_2.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="-0.01833890122 -2.628638524e-07 5.026943684e-08" rpy="0 0 0" />
+      <mass value="0.00243328" />
+      <inertia ixx="5.24477e-08" ixy="3.59706e-12" ixz="-9.47596e-13" iyy="3.44986e-07" iyz="1.42555e-10" izz="3.44371e-07" />
+    </inertial>
+  </link>
+  <link name="Motor_JGB37_545_1__Motor_body_1">
+    <!-- sw2robot density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://agribot-description/meshes/Motor_JGB37_545__Motor_body_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://agribot-description/meshes/Motor_JGB37_545__Motor_body_1.stl" />
+      </geometry>
+    </collision>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://agribot-description/meshes/Motor_JGB37_545__Cover_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://agribot-description/meshes/Motor_JGB37_545__Cover_1.stl" />
+      </geometry>
+    </collision>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://agribot-description/meshes/Motor_JGB37_545__Magnets_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://agribot-description/meshes/Motor_JGB37_545__Magnets_1.stl" />
+      </geometry>
+    </collision>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://agribot-description/meshes/Motor_JGB37_545__Terminals_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://agribot-description/meshes/Motor_JGB37_545__Terminals_1.stl" />
+      </geometry>
+    </collision>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://agribot-description/meshes/Motor_JGB37_545__Rotor_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://agribot-description/meshes/Motor_JGB37_545__Rotor_1.stl" />
+      </geometry>
+    </collision>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://agribot-description/meshes/Motor_JGB37_545__Fan_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://agribot-description/meshes/Motor_JGB37_545__Fan_1.stl" />
+      </geometry>
+    </collision>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://agribot-description/meshes/Motor_JGB37_545__Gear_1_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://agribot-description/meshes/Motor_JGB37_545__Gear_1_1.stl" />
+      </geometry>
+    </collision>
+    <inertial><origin xyz="-0.04198635027 0.0001271897414 2.951180801e-09" rpy="0 0 0" /><mass value="0.0165543748" /><inertia ixx="3.106711054e-06" ixy="4.141909394e-09" ixz="1.895741847e-12" iyy="3.73267373e-06" iyz="4.673409535e-09" izz="4.155971007e-06" /></inertial></link>
+  <link name="Motor_JGB37_545_1__Reduction_box_body_1">
+    <!-- sw2robot density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://agribot-description/meshes/Motor_JGB37_545__Reduction_box_body_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://agribot-description/meshes/Motor_JGB37_545__Reduction_box_body_1.stl" />
+      </geometry>
+    </collision>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://agribot-description/meshes/Motor_JGB37_545__Gear_2_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://agribot-description/meshes/Motor_JGB37_545__Gear_2_1.stl" />
+      </geometry>
+    </collision>
+    <inertial><origin xyz="0.02875035405 -0.007014938827 -1.527842763e-18" rpy="0 0 0" /><mass value="0.00898091" /><inertia ixx="1.564300483e-06" ixy="1.032679191e-08" ixz="2.614686105e-22" iyy="9.942854067e-07" iyz="-6.943256049e-23" izz="1.030718489e-06" /></inertial></link>
+  <link name="Motor_JGB37_545_1__Shaft_1">
+    <!-- sw2robot density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://agribot-description/meshes/Motor_JGB37_545__Shaft_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://agribot-description/meshes/Motor_JGB37_545__Shaft_1.stl" />
+      </geometry>
+    </collision>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://agribot-description/meshes/Motor_JGB37_545__Gear_3_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://agribot-description/meshes/Motor_JGB37_545__Gear_3_1.stl" />
+      </geometry>
+    </collision>
+    <inertial><origin xyz="0.02304887968 -4.957499568e-05 -2.506576257e-06" rpy="0 0 0" /><mass value="0.000931544" /><inertia ixx="5.011210549e-09" ixy="-2.086538296e-10" ixz="-1.055000371e-11" iyy="8.767407426e-08" iyz="5.714868823e-12" izz="8.756134394e-08" /></inertial></link>
+  <link name="Motor_JGB37_545_2__Motor_body_1">
+    <!-- sw2robot density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://agribot-description/meshes/Motor_JGB37_545__Motor_body_1_2.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://agribot-description/meshes/Motor_JGB37_545__Motor_body_1_2.stl" />
+      </geometry>
+    </collision>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://agribot-description/meshes/Motor_JGB37_545__Cover_1_2.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://agribot-description/meshes/Motor_JGB37_545__Cover_1_2.stl" />
+      </geometry>
+    </collision>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://agribot-description/meshes/Motor_JGB37_545__Magnets_1_2.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://agribot-description/meshes/Motor_JGB37_545__Magnets_1_2.stl" />
+      </geometry>
+    </collision>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://agribot-description/meshes/Motor_JGB37_545__Terminals_1_2.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://agribot-description/meshes/Motor_JGB37_545__Terminals_1_2.stl" />
+      </geometry>
+    </collision>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://agribot-description/meshes/Motor_JGB37_545__Rotor_1_2.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://agribot-description/meshes/Motor_JGB37_545__Rotor_1_2.stl" />
+      </geometry>
+    </collision>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://agribot-description/meshes/Motor_JGB37_545__Fan_1_2.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://agribot-description/meshes/Motor_JGB37_545__Fan_1_2.stl" />
+      </geometry>
+    </collision>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://agribot-description/meshes/Motor_JGB37_545__Gear_1_1_2.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://agribot-description/meshes/Motor_JGB37_545__Gear_1_1_2.stl" />
+      </geometry>
+    </collision>
+    <inertial><origin xyz="0.04198635027 0.0001271897404 -2.952703842e-09" rpy="0 0 0" /><mass value="0.0165543748" /><inertia ixx="3.106711054e-06" ixy="-4.141909166e-09" ixz="1.89583983e-12" iyy="3.73267373e-06" iyz="-4.673409528e-09" izz="4.155971007e-06" /></inertial></link>
+  <link name="Motor_JGB37_545_2__Reduction_box_body_1">
+    <!-- sw2robot density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://agribot-description/meshes/Motor_JGB37_545__Reduction_box_body_1_2.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://agribot-description/meshes/Motor_JGB37_545__Reduction_box_body_1_2.stl" />
+      </geometry>
+    </collision>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://agribot-description/meshes/Motor_JGB37_545__Gear_2_1_2.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://agribot-description/meshes/Motor_JGB37_545__Gear_2_1_2.stl" />
+      </geometry>
+    </collision>
+    <inertial><origin xyz="-0.02875035405 -0.007014938827 -1.276923924e-14" rpy="0 0 0" /><mass value="0.00898091" /><inertia ixx="1.564300483e-06" ixy="-1.032679191e-08" ixz="-1.582071275e-18" iyy="9.942854067e-07" iyz="-5.889630963e-19" izz="1.030718489e-06" /></inertial></link>
+  <link name="Motor_JGB37_545_2__Shaft_1">
+    <!-- sw2robot density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://agribot-description/meshes/Motor_JGB37_545__Shaft_1_2.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://agribot-description/meshes/Motor_JGB37_545__Shaft_1_2.stl" />
+      </geometry>
+    </collision>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://agribot-description/meshes/Motor_JGB37_545__Gear_3_1_2.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://agribot-description/meshes/Motor_JGB37_545__Gear_3_1_2.stl" />
+      </geometry>
+    </collision>
+    <inertial><origin xyz="-0.02304887968 -4.957499579e-05 2.506576148e-06" rpy="0 0 0" /><mass value="0.000931544" /><inertia ixx="5.011210549e-09" ixy="2.086538307e-10" ixz="-1.05500026e-11" iyy="8.767407426e-08" iyz="-5.714868819e-12" izz="8.756134394e-08" /></inertial></link>
+  <link name="Motor_JGB37_545_3__Motor_body_1">
+    <!-- sw2robot density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://agribot-description/meshes/Motor_JGB37_545__Motor_body_1_3.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://agribot-description/meshes/Motor_JGB37_545__Motor_body_1_3.stl" />
+      </geometry>
+    </collision>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://agribot-description/meshes/Motor_JGB37_545__Cover_1_3.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://agribot-description/meshes/Motor_JGB37_545__Cover_1_3.stl" />
+      </geometry>
+    </collision>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://agribot-description/meshes/Motor_JGB37_545__Magnets_1_3.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://agribot-description/meshes/Motor_JGB37_545__Magnets_1_3.stl" />
+      </geometry>
+    </collision>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://agribot-description/meshes/Motor_JGB37_545__Terminals_1_3.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://agribot-description/meshes/Motor_JGB37_545__Terminals_1_3.stl" />
+      </geometry>
+    </collision>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://agribot-description/meshes/Motor_JGB37_545__Rotor_1_3.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://agribot-description/meshes/Motor_JGB37_545__Rotor_1_3.stl" />
+      </geometry>
+    </collision>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://agribot-description/meshes/Motor_JGB37_545__Fan_1_3.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://agribot-description/meshes/Motor_JGB37_545__Fan_1_3.stl" />
+      </geometry>
+    </collision>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://agribot-description/meshes/Motor_JGB37_545__Gear_1_1_3.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://agribot-description/meshes/Motor_JGB37_545__Gear_1_1_3.stl" />
+      </geometry>
+    </collision>
+    <inertial><origin xyz="-0.04198635027 -0.0001271897422 -2.952151296e-09" rpy="0 0 0" /><mass value="0.0165543748" /><inertia ixx="3.106711054e-06" ixy="-4.141909582e-09" ixz="-1.895785828e-12" iyy="3.73267373e-06" iyz="4.673409538e-09" izz="4.155971007e-06" /></inertial></link>
+  <link name="Motor_JGB37_545_3__Reduction_box_body_1">
+    <!-- sw2robot density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://agribot-description/meshes/Motor_JGB37_545__Reduction_box_body_1_3.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://agribot-description/meshes/Motor_JGB37_545__Reduction_box_body_1_3.stl" />
+      </geometry>
+    </collision>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://agribot-description/meshes/Motor_JGB37_545__Gear_2_1_3.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://agribot-description/meshes/Motor_JGB37_545__Gear_2_1_3.stl" />
+      </geometry>
+    </collision>
+    <inertial><origin xyz="0.02875035405 0.007014938827 -1.277085065e-14" rpy="0 0 0" /><mass value="0.00898091" /><inertia ixx="1.564300483e-06" ixy="-1.032679191e-08" ixz="1.582011162e-18" iyy="9.942854067e-07" iyz="5.889610167e-19" izz="1.030718489e-06" /></inertial></link>
+  <link name="Motor_JGB37_545_3__Shaft_1">
+    <!-- sw2robot density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://agribot-description/meshes/Motor_JGB37_545__Shaft_1_3.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://agribot-description/meshes/Motor_JGB37_545__Shaft_1_3.stl" />
+      </geometry>
+    </collision>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://agribot-description/meshes/Motor_JGB37_545__Gear_3_1_3.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://agribot-description/meshes/Motor_JGB37_545__Gear_3_1_3.stl" />
+      </geometry>
+    </collision>
+    <inertial><origin xyz="0.02304887968 4.957499568e-05 2.506576148e-06" rpy="0 0 0" /><mass value="0.000931544" /><inertia ixx="5.011210549e-09" ixy="2.086538296e-10" ixz="1.05500026e-11" iyy="8.767407426e-08" iyz="5.714868819e-12" izz="8.756134394e-08" /></inertial></link>
+  <link name="Motor_JGB37_545_4__Motor_body_1">
+    <!-- sw2robot density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://agribot-description/meshes/Motor_JGB37_545__Motor_body_1_4.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://agribot-description/meshes/Motor_JGB37_545__Motor_body_1_4.stl" />
+      </geometry>
+    </collision>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://agribot-description/meshes/Motor_JGB37_545__Cover_1_4.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://agribot-description/meshes/Motor_JGB37_545__Cover_1_4.stl" />
+      </geometry>
+    </collision>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://agribot-description/meshes/Motor_JGB37_545__Magnets_1_4.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://agribot-description/meshes/Motor_JGB37_545__Magnets_1_4.stl" />
+      </geometry>
+    </collision>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://agribot-description/meshes/Motor_JGB37_545__Terminals_1_4.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://agribot-description/meshes/Motor_JGB37_545__Terminals_1_4.stl" />
+      </geometry>
+    </collision>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://agribot-description/meshes/Motor_JGB37_545__Rotor_1_4.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://agribot-description/meshes/Motor_JGB37_545__Rotor_1_4.stl" />
+      </geometry>
+    </collision>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://agribot-description/meshes/Motor_JGB37_545__Fan_1_4.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://agribot-description/meshes/Motor_JGB37_545__Fan_1_4.stl" />
+      </geometry>
+    </collision>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://agribot-description/meshes/Motor_JGB37_545__Gear_1_1_4.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://agribot-description/meshes/Motor_JGB37_545__Gear_1_1_4.stl" />
+      </geometry>
+    </collision>
+    <inertial><origin xyz="0.04198635027 -0.0001271897397 2.951733347e-09" rpy="0 0 0" /><mass value="0.0165543748" /><inertia ixx="3.106711054e-06" ixy="4.141909003e-09" ixz="-1.895792024e-12" iyy="3.73267373e-06" iyz="-4.673409526e-09" izz="4.155971007e-06" /></inertial></link>
+  <link name="Motor_JGB37_545_4__Reduction_box_body_1">
+    <!-- sw2robot density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://agribot-description/meshes/Motor_JGB37_545__Reduction_box_body_1_4.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://agribot-description/meshes/Motor_JGB37_545__Reduction_box_body_1_4.stl" />
+      </geometry>
+    </collision>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://agribot-description/meshes/Motor_JGB37_545__Gear_2_1_4.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://agribot-description/meshes/Motor_JGB37_545__Gear_2_1_4.stl" />
+      </geometry>
+    </collision>
+    <inertial><origin xyz="-0.02875035405 0.007014938827 -3.139256274e-18" rpy="0 0 0" /><mass value="0.00898091" /><inertia ixx="1.564300483e-06" ixy="1.03267919e-08" ixz="-2.013548405e-22" iyy="9.942854067e-07" iyz="6.735287031e-23" izz="1.030718489e-06" /></inertial></link>
+  <link name="Motor_JGB37_545_4__Shaft_1">
+    <!-- sw2robot density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://agribot-description/meshes/Motor_JGB37_545__Shaft_1_4.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://agribot-description/meshes/Motor_JGB37_545__Shaft_1_4.stl" />
+      </geometry>
+    </collision>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://agribot-description/meshes/Motor_JGB37_545__Gear_3_1_4.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://agribot-description/meshes/Motor_JGB37_545__Gear_3_1_4.stl" />
+      </geometry>
+    </collision>
+    <inertial><origin xyz="-0.02304887968 4.957499579e-05 -2.506576257e-06" rpy="0 0 0" /><mass value="0.000931544" /><inertia ixx="5.011210549e-09" ixy="-2.086538307e-10" ixz="1.055000371e-11" iyy="8.767407426e-08" iyz="-5.714868823e-12" izz="8.756134394e-08" /></inertial></link>
+  <link name="Plastic_Wheel_130mm_1__Plastic_Rim_2">
+    <!-- sw2robot material="ABS" density="1020" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://agribot-description/meshes/Plastic_Wheel_130mm__Plastic_Rim_2.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://agribot-description/meshes/Plastic_Wheel_130mm__Plastic_Rim_2.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="0.008487314037 -3.47261778e-10 5.819092882e-10" rpy="0 0 0" />
+      <mass value="0.0210682" />
+      <inertia ixx="1.35867e-05" ixy="-3.1534e-14" ixz="8.05434e-14" iyy="1.17255e-05" iyz="9.61947e-14" izz="1.17255e-05" />
+    </inertial>
+  </link>
+  <link name="Plastic_Wheel_130mm_1__Tyre_2">
+    <!-- sw2robot material="Silicon Rubber" density="1246.5" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://agribot-description/meshes/Plastic_Wheel_130mm__Tyre_2.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://agribot-description/meshes/Plastic_Wheel_130mm__Tyre_2.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="8.278636756e-07 2.161886249e-10 -1.663032367e-08" rpy="0 0 0" />
+      <mass value="0.0873795" />
+      <inertia ixx="0.000264138" ixy="2.03742e-12" ixz="3.54094e-11" iyy="0.000162035" iyz="4.80487e-11" izz="0.000162035" />
+    </inertial>
+  </link>
+  <link name="Plastic_Wheel_130mm_2__Plastic_Rim_2">
+    <!-- sw2robot material="ABS" density="1020" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://agribot-description/meshes/Plastic_Wheel_130mm__Plastic_Rim_2_2.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://agribot-description/meshes/Plastic_Wheel_130mm__Plastic_Rim_2_2.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="0.007487314037 6.66191352e-10 -1.240896852e-10" rpy="0 0 0" />
+      <mass value="0.0210682" />
+      <inertia ixx="1.35867e-05" ixy="8.12814e-14" ixz="-2.958e-14" iyy="1.17255e-05" iyz="1.94372e-13" izz="1.17255e-05" />
+    </inertial>
+  </link>
+  <link name="Plastic_Wheel_130mm_2__Tyre_2">
+    <!-- sw2robot material="Silicon Rubber" density="1246.5" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://agribot-description/meshes/Plastic_Wheel_130mm__Tyre_2_2.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://agribot-description/meshes/Plastic_Wheel_130mm__Tyre_2_2.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="8.278636756e-07 -1.262160612e-08 1.083094925e-08" rpy="0 0 0" />
+      <mass value="0.0873795" />
+      <inertia ixx="0.000264138" ixy="2.52229e-11" ixz="-2.49355e-11" iyy="0.000162035" iyz="-8.16905e-11" izz="0.000162035" />
+    </inertial>
+  </link>
+  <link name="Plastic_Wheel_130mm_3__Plastic_Rim_2">
+    <!-- sw2robot material="ABS" density="1020" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://agribot-description/meshes/Plastic_Wheel_130mm__Plastic_Rim_2_3.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://agribot-description/meshes/Plastic_Wheel_130mm__Plastic_Rim_2_3.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="-0.008487314037 3.690714537e-10 -5.683268677e-10" rpy="0 0 0" />
+      <mass value="0.0210682" />
+      <inertia ixx="1.35867e-05" ixy="-5.83758e-14" ixz="6.38272e-14" iyy="1.17255e-05" iyz="2.23568e-13" izz="1.17255e-05" />
+    </inertial>
+  </link>
+  <link name="Plastic_Wheel_130mm_3__Tyre_2">
+    <!-- sw2robot material="Silicon Rubber" density="1246.5" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://agribot-description/meshes/Plastic_Wheel_130mm__Tyre_2_3.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://agribot-description/meshes/Plastic_Wheel_130mm__Tyre_2_3.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="-8.278636756e-07 -1.482978136e-08 7.529408185e-09" rpy="0 0 0" />
+      <mass value="0.0873795" />
+      <inertia ixx="0.000264138" ixy="-3.26773e-11" ixz="1.379e-11" iyy="0.000162035" iyz="-3.1009e-11" izz="0.000162035" />
+    </inertial>
+  </link>
+  <link name="Plastic_Wheel_130mm_4__Plastic_Rim_2">
+    <!-- sw2robot material="ABS" density="1020" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://agribot-description/meshes/Plastic_Wheel_130mm__Plastic_Rim_2_3.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://agribot-description/meshes/Plastic_Wheel_130mm__Plastic_Rim_2_3.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="-0.008487314037 3.690714537e-10 -5.683268677e-10" rpy="0 0 0" />
+      <mass value="0.0210682" />
+      <inertia ixx="1.35867e-05" ixy="-5.83758e-14" ixz="6.38272e-14" iyy="1.17255e-05" iyz="2.23568e-13" izz="1.17255e-05" />
+    </inertial>
+  </link>
+  <link name="Plastic_Wheel_130mm_4__Tyre_2">
+    <!-- sw2robot material="Silicon Rubber" density="1246.5" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://agribot-description/meshes/Plastic_Wheel_130mm__Tyre_2_3.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://agribot-description/meshes/Plastic_Wheel_130mm__Tyre_2_3.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="-8.278636756e-07 -1.482978136e-08 7.529408185e-09" rpy="0 0 0" />
+      <mass value="0.0873795" />
+      <inertia ixx="0.000264138" ixy="-3.26773e-11" ixz="1.379e-11" iyy="0.000162035" iyz="-3.1009e-11" izz="0.000162035" />
+    </inertial>
+  </link>
+  <joint name="support_moteur_wakanda_2__Motor_JGB37_545_2__Reduction_box_body_1" type="fixed">
+    <origin xyz="-0.053 0.09199999999 0.02549999999" rpy="2.051034286e-10 2.051034285e-10 0" />
+    <parent link="base_link" />
+    <child link="Motor_JGB37_545_2__Reduction_box_body_1" />
+    <!-- mates: COINCIDENT, CONCENTRIC, COINCIDENT, CONCENTRIC -->
+    <!-- sw2robot-note: geo: free rotation about mate axis (1 DOF) -->
+  </joint>
+  <joint name="Motor_JGB37_545_2__Reduction_box_body_1__Motor_JGB37_545_2__Motor_body_1" type="fixed">
+    <origin xyz="-0.034 -0.007 0" rpy="0 0 0" />
+    <parent link="Motor_JGB37_545_2__Reduction_box_body_1" />
+    <child link="Motor_JGB37_545_2__Motor_body_1" />
+    <!-- mates: COINCIDENT, CONCENTRIC, COINCIDENT, CONCENTRIC -->
+    <!-- sw2robot-note: geo: free rotation about mate axis (1 DOF) -->
+  </joint>
+  <joint name="Motor_JGB37_545_2__Reduction_box_body_1__Motor_JGB37_545_2__Shaft_1" type="continuous">
+    <origin xyz="-0.014999 0 0" rpy="0 0 0" />
+    <parent link="Motor_JGB37_545_2__Reduction_box_body_1" />
+    <child link="Motor_JGB37_545_2__Shaft_1" />
+    <axis xyz="-1 0 0" />
+    <limit effort="10" velocity="3.14" />
+    <!-- mates: DISTANCE, CONCENTRIC, DISTANCE, CONCENTRIC -->
+    <!-- sw2robot-note: geo: free rotation about mate axis (1 DOF) -->
+  </joint>
+  <joint name="support_moteur_wakanda_3__Motor_JGB37_545_4__Reduction_box_body_1" type="fixed">
+    <origin xyz="-0.053 -0.09199999999 0.02549999999" rpy="-2.051034286e-10 2.051034285e-10 0" />
+    <parent link="base_link" />
+    <child link="Motor_JGB37_545_4__Reduction_box_body_1" />
+    <!-- mates: COINCIDENT, CONCENTRIC, COINCIDENT, CONCENTRIC -->
+    <!-- sw2robot-note: geo: free rotation about mate axis (1 DOF) -->
+  </joint>
+  <joint name="Motor_JGB37_545_4__Reduction_box_body_1__Motor_JGB37_545_4__Motor_body_1" type="fixed">
+    <origin xyz="-0.034 0.007 0" rpy="0 0 0" />
+    <parent link="Motor_JGB37_545_4__Reduction_box_body_1" />
+    <child link="Motor_JGB37_545_4__Motor_body_1" />
+    <!-- mates: COINCIDENT, CONCENTRIC, COINCIDENT, CONCENTRIC -->
+    <!-- sw2robot-note: geo: free rotation about mate axis (1 DOF) -->
+  </joint>
+  <joint name="Motor_JGB37_545_4__Reduction_box_body_1__Motor_JGB37_545_4__Shaft_1" type="continuous">
+    <origin xyz="-0.014999 0 0" rpy="0 0 0" />
+    <parent link="Motor_JGB37_545_4__Reduction_box_body_1" />
+    <child link="Motor_JGB37_545_4__Shaft_1" />
+    <axis xyz="-1 0 0" />
+    <limit effort="10" velocity="3.14" />
+    <!-- mates: DISTANCE, CONCENTRIC, DISTANCE, CONCENTRIC -->
+    <!-- sw2robot-note: geo: free rotation about mate axis (1 DOF) -->
+  </joint>
+  <joint name="support_moteur_wakanda_4__Motor_JGB37_545_1__Reduction_box_body_1" type="fixed">
+    <origin xyz="0.053 0.09200000001 0.02549999999" rpy="-2.051034286e-10 -2.051034285e-10 0" />
+    <parent link="base_link" />
+    <child link="Motor_JGB37_545_1__Reduction_box_body_1" />
+    <!-- mates: COINCIDENT, CONCENTRIC, COINCIDENT, CONCENTRIC -->
+    <!-- sw2robot-note: geo: free rotation about mate axis (1 DOF) -->
+  </joint>
+  <joint name="Motor_JGB37_545_1__Reduction_box_body_1__Motor_JGB37_545_1__Motor_body_1" type="fixed">
+    <origin xyz="0.034 -0.007 0" rpy="0 0 0" />
+    <parent link="Motor_JGB37_545_1__Reduction_box_body_1" />
+    <child link="Motor_JGB37_545_1__Motor_body_1" />
+    <!-- mates: COINCIDENT, CONCENTRIC, COINCIDENT, CONCENTRIC -->
+    <!-- sw2robot-note: geo: free rotation about mate axis (1 DOF) -->
+  </joint>
+  <joint name="Motor_JGB37_545_1__Reduction_box_body_1__Motor_JGB37_545_1__Shaft_1" type="continuous">
+    <origin xyz="0.014999 0 0" rpy="0 0 0" />
+    <parent link="Motor_JGB37_545_1__Reduction_box_body_1" />
+    <child link="Motor_JGB37_545_1__Shaft_1" />
+    <axis xyz="-1 0 0" />
+    <limit effort="10" velocity="3.14" />
+    <!-- mates: DISTANCE, CONCENTRIC, DISTANCE, CONCENTRIC -->
+    <!-- sw2robot-note: geo: free rotation about mate axis (1 DOF) -->
+  </joint>
+  <joint name="support_moteur_wakanda_5__Motor_JGB37_545_3__Reduction_box_body_1" type="fixed">
+    <origin xyz="0.053 -0.09200000001 0.02549999999" rpy="2.051034286e-10 -2.051034285e-10 0" />
+    <parent link="base_link" />
+    <child link="Motor_JGB37_545_3__Reduction_box_body_1" />
+    <!-- mates: COINCIDENT, CONCENTRIC, COINCIDENT, CONCENTRIC -->
+    <!-- sw2robot-note: geo: free rotation about mate axis (1 DOF) -->
+  </joint>
+  <joint name="Motor_JGB37_545_3__Reduction_box_body_1__Motor_JGB37_545_3__Motor_body_1" type="fixed">
+    <origin xyz="0.034 0.007 0" rpy="0 0 0" />
+    <parent link="Motor_JGB37_545_3__Reduction_box_body_1" />
+    <child link="Motor_JGB37_545_3__Motor_body_1" />
+    <!-- mates: COINCIDENT, CONCENTRIC, COINCIDENT, CONCENTRIC -->
+    <!-- sw2robot-note: geo: free rotation about mate axis (1 DOF) -->
+  </joint>
+  <joint name="Motor_JGB37_545_3__Reduction_box_body_1__Motor_JGB37_545_3__Shaft_1" type="continuous">
+    <origin xyz="0.014999 0 0" rpy="0 0 0" />
+    <parent link="Motor_JGB37_545_3__Reduction_box_body_1" />
+    <child link="Motor_JGB37_545_3__Shaft_1" />
+    <axis xyz="-1 0 0" />
+    <limit effort="10" velocity="3.14" />
+    <!-- mates: DISTANCE, CONCENTRIC, DISTANCE, CONCENTRIC -->
+    <!-- sw2robot-note: geo: free rotation about mate axis (1 DOF) -->
+  </joint>
+  <joint name="Motor_JGB37_545_1__Reduction_box_body_1__motor_hub_3" type="fixed">
+    <origin xyz="0.025001 0 0" rpy="0 0 0" />
+    <parent link="Motor_JGB37_545_1__Shaft_1" />
+    <child link="motor_hub_3" />
+    <!-- mates: CONCENTRIC, CONCENTRIC -->
+    <!-- sw2robot-note: geo: free rotation about mate axis (2 DOF) -->
+  </joint>
+  <joint name="motor_hub_3__Plastic_Wheel_130mm_2__Plastic_Rim_2" type="fixed">
+    <origin xyz="0.036 0 0" rpy="0 0 0" />
+    <parent link="motor_hub_3" />
+    <child link="Plastic_Wheel_130mm_2__Plastic_Rim_2" />
+<!-- mates: COINCIDENT, CONCENTRIC, COINCIDENT, CONCENTRIC -->
+    <!-- sw2robot-note: geo: free rotation about mate axis (1 DOF) -->
+  </joint>
+  <joint name="Plastic_Wheel_130mm_2__Plastic_Rim_2__Plastic_Wheel_130mm_2__Tyre_2" type="fixed">
+    <origin xyz="0.0043 0 0" rpy="0 0 0" />
+    <parent link="Plastic_Wheel_130mm_2__Plastic_Rim_2" />
+    <child link="Plastic_Wheel_130mm_2__Tyre_2" />
+<!-- mates: WIDTH, CONCENTRIC, WIDTH, CONCENTRIC -->
+    <!-- sw2robot-note: geo: free rotation about mate axis (1 DOF) -->
+  </joint>
+  <joint name="Motor_JGB37_545_2__Reduction_box_body_1__motor_hub_4" type="fixed">
+    <origin xyz="-0.025001 0 0" rpy="0 0 0" />
+    <parent link="Motor_JGB37_545_2__Shaft_1" />
+    <child link="motor_hub_4" />
+
+    <!-- mates: CONCENTRIC, CONCENTRIC -->
+    <!-- sw2robot-note: geo: free rotation about mate axis (2 DOF) -->
+  </joint>
+  <joint name="motor_hub_4__Plastic_Wheel_130mm_3__Plastic_Rim_2" type="fixed">
+    <origin xyz="-0.035 0 0" rpy="0 0 0" />
+    <parent link="motor_hub_4" />
+    <child link="Plastic_Wheel_130mm_3__Plastic_Rim_2" />
+
+    <!-- mates: COINCIDENT, CONCENTRIC, COINCIDENT, CONCENTRIC -->
+    <!-- sw2robot-note: geo: free rotation about mate axis (1 DOF) -->
+  </joint>
+  <joint name="Plastic_Wheel_130mm_3__Plastic_Rim_2__Plastic_Wheel_130mm_3__Tyre_2" type="fixed">
+    <origin xyz="-0.0053 0 0" rpy="0 0 0" />
+    <parent link="Plastic_Wheel_130mm_3__Plastic_Rim_2" />
+    <child link="Plastic_Wheel_130mm_3__Tyre_2" />
+
+    <!-- mates: WIDTH, CONCENTRIC, WIDTH, CONCENTRIC -->
+    <!-- sw2robot-note: geo: free rotation about mate axis (1 DOF) -->
+  </joint>
+  <joint name="Motor_JGB37_545_3__Reduction_box_body_1__motor_hub_2" type="fixed">
+    <origin xyz="0.025001 0 0" rpy="0 0 0" />
+    <parent link="Motor_JGB37_545_3__Shaft_1" />
+    <child link="motor_hub_2" />
+    <!-- mates: CONCENTRIC, CONCENTRIC -->
+    <!-- sw2robot-note: geo: free rotation about mate axis (2 DOF) -->
+  </joint>
+  <joint name="motor_hub_2__Plastic_Wheel_130mm_1__Plastic_Rim_2" type="fixed">
+    <origin xyz="0.035 0 0" rpy="0 0 0" />
+    <parent link="motor_hub_2" />
+    <child link="Plastic_Wheel_130mm_1__Plastic_Rim_2" />
+    <!-- mates: COINCIDENT, CONCENTRIC, COINCIDENT, CONCENTRIC -->
+    <!-- sw2robot-note: geo: free rotation about mate axis (1 DOF) -->
+  </joint>
+  <joint name="Plastic_Wheel_130mm_1__Plastic_Rim_2__Plastic_Wheel_130mm_1__Tyre_2" type="fixed">
+    <origin xyz="0.0053 0 0" rpy="0 0 0" />
+    <parent link="Plastic_Wheel_130mm_1__Plastic_Rim_2" />
+    <child link="Plastic_Wheel_130mm_1__Tyre_2" />
+    <!-- mates: WIDTH, CONCENTRIC, WIDTH, CONCENTRIC -->
+    <!-- sw2robot-note: geo: free rotation about mate axis (1 DOF) -->
+  </joint>
+  <joint name="Motor_JGB37_545_4__Reduction_box_body_1__motor_hub_5" type="fixed">
+    <origin xyz="-0.025001 0 0" rpy="0 0 0" />
+    <parent link="Motor_JGB37_545_4__Shaft_1" />
+    <child link="motor_hub_5" />
+    <!-- mates: CONCENTRIC, CONCENTRIC -->
+    <!-- sw2robot-note: geo: free rotation about mate axis (2 DOF) -->
+  </joint>
+  <joint name="motor_hub_5__Plastic_Wheel_130mm_4__Plastic_Rim_2" type="fixed">
+    <origin xyz="-0.035 0 0" rpy="0 0 0" />
+    <parent link="motor_hub_5" />
+    <child link="Plastic_Wheel_130mm_4__Plastic_Rim_2" />
+    <!-- mates: COINCIDENT, CONCENTRIC, COINCIDENT, CONCENTRIC -->
+    <!-- sw2robot-note: geo: free rotation about mate axis (1 DOF) -->
+  </joint>
+  <joint name="Plastic_Wheel_130mm_4__Plastic_Rim_2__Plastic_Wheel_130mm_4__Tyre_2" type="fixed">
+    <origin xyz="-0.0053 0 0" rpy="0 0 0" />
+    <parent link="Plastic_Wheel_130mm_4__Plastic_Rim_2" />
+    <child link="Plastic_Wheel_130mm_4__Tyre_2" />
+    <!-- mates: WIDTH, CONCENTRIC, WIDTH, CONCENTRIC -->
+    <!-- sw2robot-note: geo: free rotation about mate axis (1 DOF) -->
+  </joint>
+  </robot>
